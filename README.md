@@ -27,7 +27,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - All words of more than 3 characteres plus a '0' were ommitted (example: 'padre0')
 
 #### Reference
-Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
+Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/).
 
 ## FastText embeddings from Spanish Wikipedia 
 

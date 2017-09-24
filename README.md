@@ -16,7 +16,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - max subword-ngram = 6
     - epochs = 20
     - dim = 300
-    - all other paramenters set as default
+    - all other parameters set as default
      
 #### Corpus
 - [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/)

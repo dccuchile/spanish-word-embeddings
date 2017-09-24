@@ -6,7 +6,7 @@ Below you find links to Spanish word embeddings computed with different methods 
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=855380): 
-- [Vector format (.vec.gz)](http://dcc.uchile.cl/~jperez/word-embeddings/fasttext-sbwc.3.6.e20.vec.gz)(802 MB) 
+- [Vector format (.vec.gz)](http://dcc.uchile.cl/~jperez/word-embeddings/fasttext-sbwc.3.6.e20.vec.gz) (802 MB) 
 - [Binary format (.bin)](http://dcc.uchile.cl/~jperez/word-embeddings/fasttext-sbwc.3.6.e20.bin) (4.2 GB)
 
 #### Algorithm
@@ -34,7 +34,7 @@ Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezroj
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=985667): 
 - [Vector format (.vec)](https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.es.vec) (2.4 GB) 
-- [Binary plus Vector format (.zip)](https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.es.zip) (5.4 GB)
+- [Binary plus vector format (.zip)](https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.es.zip) (5.4 GB)
 
 #### Algorithm
 - Implementation: [FastText](https://github.com/facebookresearch/fastText) with Skipgram

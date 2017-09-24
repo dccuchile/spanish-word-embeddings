@@ -2,7 +2,7 @@
 
 Below you find links to Spanish word embeddings computed with different methods. Whenever it is possible we include a description of the parameters used to compute the embeddings, together with simple statistics of the vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided when possible with explicit links to the source.
 
-## FastText embeddings from SBWC (by [Jorge Pérez](https://github.com/jorgeperezrojas))
+## FastText embeddings from SBWC
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=855380): 
@@ -26,8 +26,10 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - Every sequence of the 'DIGITO' keyword was replaced by (a single) '0'
     - All words of more than 3 characteres plus a '0' were ommitted (example: 'padre0')
 
+#### Reference
+Word embeddings computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you whish under the  license.
 
-## FastText embeddings from Spanish Wikipedia (by [FastText team](https://github.com/facebookresearch/fastText))
+## FastText embeddings from Spanish Wikipedia 
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=985667): 
@@ -41,8 +43,11 @@ Links to the embeddings (#dimensions=300, #vectors=985667):
 #### Corpus
 - Corpus: [Wikipedia Spanish Dump](https://archive.org/details/eswiki-20150105)
 
+#### Reference
+Word embeddings computed by [FastText team](https://github.com/facebookresearch/fastText).
+Please refer to [FastText Pre-trained Vectors page](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) if you want to use these vectors and to properly cite the source.
 
-## Word2Vec embeddings from SBWC (by [Cristian Cardellino](https://github.com/crscardellino))
+## Word2Vec embeddings from SBWC
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=1000653) 
@@ -57,4 +62,6 @@ Links to the embeddings (#dimensions=300, #vectors=1000653)
 - Corpus: [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/) 
 - Corpus Size: 1.4 billion words
 
+#### Reference
+Word vectors computed by [Cristian Cardellino](https://github.com/crscardellino). Please refer to the [SBWCE page](http://crscardellino.me/SBWCE/) if you want to use these vectors and to properly cite the source.
 

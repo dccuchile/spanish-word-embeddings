@@ -27,7 +27,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - All words of more than 3 characteres plus a '0' were ommitted (example: 'padre0')
 
 #### Reference
-Word embeddings computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you whish under the  license.
+Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606)
 
 ## FastText embeddings from Spanish Wikipedia 
 
@@ -45,7 +45,7 @@ Links to the embeddings (#dimensions=300, #vectors=985667):
 
 #### Reference
 Word embeddings computed by [FastText team](https://github.com/facebookresearch/fastText).
-Please refer to [FastText Pre-trained Vectors page](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) if you want to use these vectors and to properly cite the source.
+Please refer to [FastText Pre-trained Vectors page](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) if you want to use these vectors.
 
 ## Word2Vec embeddings from SBWC
 
@@ -63,5 +63,5 @@ Links to the embeddings (#dimensions=300, #vectors=1000653)
 - Corpus Size: 1.4 billion words
 
 #### Reference
-Word vectors computed by [Cristian Cardellino](https://github.com/crscardellino). Please refer to the [SBWCE page](http://crscardellino.me/SBWCE/) if you want to use these vectors and to properly cite the source.
+Word vectors computed by [Cristian Cardellino](https://github.com/crscardellino). Please refer to the [SBWCE page](http://crscardellino.me/SBWCE/) if you want to use these vectors.
 

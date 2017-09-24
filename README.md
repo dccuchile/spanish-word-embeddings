@@ -19,7 +19,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - all other paramenters set as default
      
 #### Corpus
-- Corpus: [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/)
+- [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/)
 - Corpus Size: 1.4 billion words
 - Post processing: Besides the post processing of the raw corpus explained in the [SBWCE page](http://crscardellino.me/SBWCE/) that included deletion of punctuation, numbers, etc., the following processing was applied:
     - Words were converted to lower case letters
@@ -41,7 +41,7 @@ Links to the embeddings (#dimensions=300, #vectors=985667):
 - Parameters: FastText default parameters
      
 #### Corpus
-- Corpus: [Wikipedia Spanish Dump](https://archive.org/details/eswiki-20150105)
+- [Wikipedia Spanish Dump](https://archive.org/details/eswiki-20150105)
 
 #### Reference
 Word embeddings were computed by [FastText team](https://github.com/facebookresearch/fastText).
@@ -59,7 +59,7 @@ Links to the embeddings (#dimensions=300, #vectors=1000653)
 - Parameters: For details on parameters please refer to the [SBWCE page](http://crscardellino.me/SBWCE/)
      
 #### Corpus
-- Corpus: [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/) 
+- [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/) 
 - Corpus Size: 1.4 billion words
 
 #### Reference

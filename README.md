@@ -1,6 +1,6 @@
 # Spanish Word Embeddings
 
-Below you find links to Spanish word embeddings computed with different methods and from different corpuses. Whenever it is possible we include a description of the parameters used to compute the embeddings, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided. (Please refer to the original sources for proper citations.)
+Below you find links to Spanish word embeddings computed with different methods and from different corpuses. Whenever it is possible, a description of the parameters used to compute the embeddings is included, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided, so please refer to the original sources for proper citation.
 
 ## FastText embeddings from SBWC
 

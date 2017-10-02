@@ -1,6 +1,6 @@
 # Spanish Word Embeddings
 
-Below you find links to Spanish word embeddings computed with different methods and from different corpora. Whenever it is possible, a description of the parameters used to compute the embeddings is included, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided, so please refer to the original sources for proper citation.
+Below you find links to Spanish word embeddings computed with different methods and from different corpora. Whenever it is possible, a description of the parameters used to compute the embeddings is included, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided, so please refer to the original sources for proper citation. (An example of the use of some of these embeddings can be found [here](Ejemplo_WorVectors.ipynb).)
 
 ## FastText embeddings from SBWC
 
@@ -27,7 +27,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - All words of more than 3 characteres plus a '0' were ommitted (example: 'padre0')
 
 #### Reference
-Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/).
+Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/). 
 
 ## FastText embeddings from Spanish Wikipedia 
 

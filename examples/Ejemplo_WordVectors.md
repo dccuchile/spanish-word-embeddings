@@ -22,9 +22,6 @@ cantidad = 100000
 wordvectors = KeyedVectors.load_word2vec_format(wordvectors_file_vec, limit=cantidad).wv
 ```
 
-    Using Theano backend.
-
-
 ## Word vectors en analogías
 
 Ejemplo de uso: `most_similar_cosmul(positive=lista_palabras_positivas, negative=lista_palabras_negativas)`

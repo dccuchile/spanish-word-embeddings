@@ -26,7 +26,7 @@ wordvectors = KeyedVectors.load_word2vec_format(wordvectors_file_vec, limit=cant
 
 Ejemplo de uso: `most_similar_cosmul(positive=lista_palabras_positivas, negative=lista_palabras_negativas)`
 
-Esta llamada encuentra las palabras del vocabulario que están más cercanas a las palabras en `listas_palabras_positivas` y no estén cercanas a `lista_palabras_negativas` (para una formalización del procedimiento, ver la Sección 3 de [este artículo](http://www.aclweb.org/anthology/W14-1618)).
+Esta llamada encuentra las palabras del vocabulario que están más cercanas a las palabras en `listas_palabras_positivas` y no estén cercanas a `lista_palabras_negativas` (para una formalización del procedimiento, ver la fórmula (4) en la Sección 6 de [este artículo](http://www.aclweb.org/anthology/W14-1618)).
 
 Cuando `lista_palabras_positivas` contiene dos palabras, digamos `a` y `b_p`, y `lista_palabras_negativas` contiene una palabra, digamos `a_p`, el anterior procedimiento se lee coloquialmente como el encontrar la palabra `b` que responde a la pregunta: `a_p` es a `a` como `b_p` es a ???. El ejemplo clásico se tiene cuando `a` es `rey`, `b_p` es `mujer`, y `a_p` es `hombre`. La palabra buscada `b` es `reina`, pues `hombre` es a `rey` como `mujer` es a `reina`. (Personalmente considero que la intuición de palabras  más lejanas y más cercanas es mucho mejor que la de analogías, pero la de analogías es más común en los tutoriales de word embeddings). 
 

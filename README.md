@@ -30,7 +30,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 #### Reference
 Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/). 
 
-## Glove embeddings from SBWC
+## GloVe embeddings from SBWC
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=855380): 
@@ -38,7 +38,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 - [Binary format (.bin)](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.bin) (3.9 GB)
 
 #### Algorithm
-- Implementation: [Glove](https://github.com/stanfordnlp/GloVe)
+- Implementation: [GloVe](https://github.com/stanfordnlp/GloVe)
 - Parameters: 
     - vector-size = 300
     - iter = 25
@@ -49,7 +49,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 - [Spanish Billion Word Corpus](http://crscardellino.me/SBWCE/) (see above)
 
 #### Reference
-Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the Glove paper [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/).
+Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the GloVe paper [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf) and the [Spanish Billion Word Corpus project](http://crscardellino.me/SBWCE/).
 
 ## FastText embeddings from Spanish Wikipedia 
 

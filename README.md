@@ -14,6 +14,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 - Parameters: 
     - min subword-ngram = 3 
     - max subword-ngram = 6
+    - minCount = 5
     - epochs = 20
     - dim = 300
     - all other parameters set as default
@@ -33,13 +34,15 @@ Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezroj
 
 #### Embeddings
 Links to the embeddings (#dimensions=300, #vectors=855380): 
-- [Vector format (.vec.gz)]() (897 MB) 
-- [Binary format (.bin)]() (XX GB)
+- [Vector format (.vec.gz)](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.vec.gz) (906 MB) 
+- [Binary format (.bin)](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.bin) (3.9 GB)
 
 #### Algorithm
 - Implementation: [Glove](https://github.com/stanfordnlp/GloVe)
 - Parameters: 
-    - 25 iterations
+    - vector-size = 300
+    - iter = 25
+    - min-count = 5
     - all other parameters set as default
 
 #### Corpus

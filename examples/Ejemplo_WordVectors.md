@@ -8,7 +8,7 @@ Primero cargamos los vectores/embeddings usando [gensim](https://radimrehurek.co
 # opción 1: cargar todos los vectores desde el formato binario (lento, requiere mucha memoria)
 # from gensim.models.wrappers import FastText
 # wordvectors_file = 'fasttext-sbwc.3.6.e20'
-# wordvectors = FastText.load_fasttext_format(wordvectors_file).wv
+# wordvectors = FastText.load_fasttext_format(wordvectors_file)
 ```
 
 La segunda forma, mucho más rápida, es cargar sólo una parte de los vectores. Para esto usamos el formato nativo de word2vec y cargamos una cantidad fija de vectores (se pueden cargar vectores generados por diversos métodos como FastText).
@@ -19,7 +19,7 @@ La segunda forma, mucho más rápida, es cargar sólo una parte de los vectores.
 from gensim.models.keyedvectors import KeyedVectors
 wordvectors_file_vec = 'fasttext-sbwc.3.6.e20.vec'
 cantidad = 100000
-wordvectors = KeyedVectors.load_word2vec_format(wordvectors_file_vec, limit=cantidad).wv
+wordvectors = KeyedVectors.load_word2vec_format(wordvectors_file_vec, limit=cantidad)
 ```
 
 ## Word vectors en analogías
@@ -40,16 +40,16 @@ wordvectors.most_similar_cosmul(positive=['rey','mujer'],negative=['hombre'])
 
 
 
-    [('reina', 0.9141532778739929),
-     ('infanta', 0.8582408428192139),
-     ('berenguela', 0.8470728993415833),
-     ('princesa', 0.8445042371749878),
-     ('consorte', 0.835599422454834),
-     ('emperatriz', 0.8247664570808411),
-     ('regente', 0.8239887356758118),
-     ('infantas', 0.8104739785194397),
-     ('hermanastra', 0.8072930574417114),
-     ('regencia', 0.8037241101264954)]
+    [('reina', 0.9141066670417786),
+     ('isabel', 0.8743277192115784),
+     ('princesa', 0.843113124370575),
+     ('infanta', 0.8425983190536499),
+     ('monarca', 0.8357319831848145),
+     ('hija', 0.8211697340011597),
+     ('consorte', 0.8179485201835632),
+     ('iv', 0.813984215259552),
+     ('esposa', 0.8115168213844299),
+     ('ii', 0.8099035620689392)]
 
 
 
@@ -61,16 +61,16 @@ wordvectors.most_similar_cosmul(positive=['actor','mujer'],negative=['hombre'])
 
 
 
-    [('actriz', 0.9687138795852661),
-     ('compositora', 0.8557133078575134),
-     ('cantante', 0.8482002019882202),
-     ('actrices', 0.845941424369812),
-     ('dramaturga', 0.8354867696762085),
-     ('presentadora', 0.8346402645111084),
-     ('bailarina', 0.830103874206543),
-     ('coprotagonista', 0.8284398317337036),
-     ('guionista', 0.828334629535675),
-     ('cantautora', 0.827379047870636)]
+    [('actriz', 0.9732905030250549),
+     ('actores', 0.8580312728881836),
+     ('actrices', 0.8464058041572571),
+     ('cantante', 0.8347789645195007),
+     ('reparto', 0.8277631402015686),
+     ('protagonista', 0.8202100396156311),
+     ('invitada', 0.8101590871810913),
+     ('papel', 0.8021049499511719),
+     ('guionista', 0.7968517541885376),
+     ('intérprete', 0.7961310744285583)]
 
 
 
@@ -82,16 +82,16 @@ wordvectors.most_similar_cosmul(positive=['hijo','mujer'],negative=['hombre'])
 
 
 
-    [('hija', 0.9641352295875549),
-     ('esposa', 0.9116341471672058),
-     ('madre', 0.9057636260986328),
-     ('nieta', 0.8976945877075195),
-     ('hermanastra', 0.8958925604820251),
-     ('nuera', 0.8941904902458191),
-     ('hijos', 0.8940641283988953),
-     ('embarazada', 0.8930323123931885),
-     ('primogénita', 0.8921582698822021),
-     ('hermana', 0.8830597996711731)]
+    [('hija', 0.9856907725334167),
+     ('esposa', 0.9255169034004211),
+     ('hijos', 0.9249492883682251),
+     ('madre', 0.9138885736465454),
+     ('hermana', 0.8996301889419556),
+     ('hijas', 0.8754291534423828),
+     ('casó', 0.8729564547538757),
+     ('matrimonio', 0.8709645867347717),
+     ('viuda', 0.8557067513465881),
+     ('casada', 0.8546223044395447)]
 
 
 
@@ -103,16 +103,16 @@ wordvectors.most_similar_cosmul(positive=['yerno','mujer'],negative=['hombre'])
 
 
 
-    [('nuera', 0.8991931080818176),
-     ('cuñada', 0.8967029452323914),
-     ('esposa', 0.879116415977478),
-     ('hija', 0.8787108659744263),
-     ('suegra', 0.8752366304397583),
-     ('sobrina', 0.8678680658340454),
-     ('hermanastra', 0.8615662455558777),
-     ('viuda', 0.8587483167648315),
-     ('yernos', 0.8577941656112671),
-     ('nieta', 0.8574915528297424)]
+    [('nuera', 0.9055585861206055),
+     ('cuñada', 0.8592773079872131),
+     ('esther', 0.8199110627174377),
+     ('sobrina', 0.8171849846839905),
+     ('suegra', 0.8157253265380859),
+     ('hija', 0.8014461398124695),
+     ('infanta', 0.8008802533149719),
+     ('esposa', 0.8008227944374084),
+     ('nieta', 0.7964767813682556),
+     ('cuñado', 0.7955604195594788)]
 
 
 
@@ -126,16 +126,16 @@ wordvectors.most_similar_cosmul(positive=['jugar','canta'],negative=['cantar'])
 
 
 
-    [('juega', 0.9270390272140503),
-     ('jugará', 0.903049647808075),
-     ('juegue', 0.8957996368408203),
-     ('jugando', 0.8832089304924011),
-     ('juegan', 0.868077278137207),
-     ('jugado', 0.8658616542816162),
-     ('jugó', 0.8645129799842834),
-     ('juegas', 0.8533656597137451),
-     ('jugaría', 0.8508267402648926),
-     ('jugara', 0.8470847606658936)]
+    [('juega', 0.8944003582000732),
+     ('jugando', 0.8376926183700562),
+     ('jugará', 0.834348201751709),
+     ('jugador', 0.8295056819915771),
+     ('jugó', 0.8156978487968445),
+     ('jugado', 0.8147079348564148),
+     ('futbolista', 0.7927162647247314),
+     ('juegue', 0.7921290397644043),
+     ('fútbol', 0.7888965606689453),
+     ('juegan', 0.7832154631614685)]
 
 
 
@@ -147,123 +147,37 @@ wordvectors.most_similar_cosmul(positive=['jugar','cantaría'],negative=['cantar
 
 
 
-    [('jugaría', 1.002570629119873),
-     ('jugarían', 0.951291024684906),
-     ('jugara', 0.9422449469566345),
-     ('disputaría', 0.9186552166938782),
-     ('jugará', 0.908361554145813),
-     ('jugaran', 0.8989543914794922),
-     ('jugase', 0.8874876499176025),
-     ('disputarían', 0.8822468519210815),
-     ('jugó', 0.8740344643592834),
-     ('ficharía', 0.8733252286911011)]
+    [('jugaría', 0.8204259276390076),
+     ('jugará', 0.7848052382469177),
+     ('juegue', 0.7704501152038574),
+     ('jugara', 0.7684974670410156),
+     ('ganamos', 0.7370696067810059),
+     ('disputaría', 0.7334685325622559),
+     ('perderá', 0.7326226234436035),
+     ('lesionó', 0.723604679107666),
+     ('perdería', 0.7234238386154175),
+     ('jugó', 0.7223093509674072)]
 
 
 
 
 ```python
-wordvectors.most_similar_cosmul(positive=['ir','jugaba'],negative=['jugar'])
+wordvectors.most_similar_cosmul(positive=['ir','jugando'],negative=['jugar'])
 ```
 
 
 
 
-    [('iba', 0.8358239531517029),
-     ('iría', 0.8330116868019104),
-     ('iban', 0.8197974562644958),
-     ('andaba', 0.8181521892547607),
-     ('venía', 0.8127180933952332),
-     ('pasaba', 0.806372880935669),
-     ('salía', 0.8061624765396118),
-     ('llegaba', 0.8007727861404419),
-     ('ido', 0.8003631830215454),
-     ('venían', 0.790458083152771)]
-
-
-
-### Ejemplos de política
-
-
-```python
-wordvectors.most_similar_cosmul(positive=['pinochet','argentino'],negative=['chileno'])
-```
-
-
-
-
-    [('menem', 0.8302620649337769),
-     ('perón', 0.8235861659049988),
-     ('galtieri', 0.8023414611816406),
-     ('onganía', 0.8013173937797546),
-     ('videla', 0.7994171380996704),
-     ('alfonsín', 0.7985163331031799),
-     ('kirchner', 0.7978085279464722),
-     ('kirchnerismo', 0.7961062788963318),
-     ('dictador', 0.795034646987915),
-     ('peronismo', 0.7945936322212219)]
-
-
-
-
-```python
-wordvectors.most_similar_cosmul(positive=['pinochet','peruano'],negative=['chileno'])
-```
-
-
-
-
-    [('fujimori', 0.879432737827301),
-     ('leguía', 0.8281515836715698),
-     ('dictador', 0.814770519733429),
-     ('ollanta', 0.8126699328422546),
-     ('humala', 0.80531907081604),
-     ('apristas', 0.7981743812561035),
-     ('odría', 0.7976544499397278),
-     ('aprista', 0.7967919707298279),
-     ('belaúnde', 0.7959150671958923),
-     ('orbegoso', 0.7874271273612976)]
-
-
-
-
-```python
-wordvectors.most_similar_cosmul(positive=['bachelet','argentina'],negative=['chile'])
-```
-
-
-
-
-    [('kirchner', 0.9510541558265686),
-     ('mandataria', 0.8866869211196899),
-     ('dilma', 0.8731293082237244),
-     ('rousseff', 0.870695173740387),
-     ('kirchnerista', 0.8655502200126648),
-     ('duhalde', 0.8641150593757629),
-     ('scioli', 0.856192946434021),
-     ('alfonsín', 0.8515958189964294),
-     ('perón', 0.8501841425895691),
-     ('kirchnerismo', 0.8450447916984558)]
-
-
-
-
-```python
-wordvectors.most_similar_cosmul(positive=['bachelet','brasil'],negative=['chile'])
-```
-
-
-
-
-    [('dilma', 0.9780699610710144),
-     ('rousseff', 0.9759045243263245),
-     ('lula', 0.92941814661026),
-     ('inácio', 0.8913270831108093),
-     ('inacio', 0.8903253674507141),
-     ('mandataria', 0.8615238666534424),
-     ('kirchner', 0.8515970706939697),
-     ('luiz', 0.8485301733016968),
-     ('cavaco', 0.846683919429779),
-     ('collor', 0.83381187915802)]
+    [('yendo', 0.881558895111084),
+     ('llevando', 0.8737362623214722),
+     ('ido', 0.8687229156494141),
+     ('saliendo', 0.8531793355941772),
+     ('seguir', 0.8456405997276306),
+     ('haciendo', 0.8450909852981567),
+     ('va', 0.8442757725715637),
+     ('vaya', 0.838218629360199),
+     ('dando', 0.8275400996208191),
+     ('estamos', 0.8271223306655884)]
 
 
 
@@ -277,16 +191,16 @@ wordvectors.most_similar_cosmul(positive=['santiago','venezuela'],negative=['chi
 
 
 
-    [('caracas', 0.9048638343811035),
-     ('barinas', 0.871845543384552),
-     ('brión', 0.8565776944160461),
-     ('cojedes', 0.8514757752418518),
-     ('cumaná', 0.8507834672927856),
-     ('guanare', 0.8507248759269714),
-     ('maturín', 0.8474243879318237),
-     ('mariño', 0.84685218334198),
-     ('barquisimeto', 0.8451403975486755),
-     ('falcón', 0.8430416584014893)]
+    [('caracas', 0.8996074795722961),
+     ('bolívar', 0.8295609354972839),
+     ('mérida', 0.8287113308906555),
+     ('maracaibo', 0.826995849609375),
+     ('miranda', 0.8242772817611694),
+     ('santa', 0.8197780847549438),
+     ('trujillo', 0.8175155520439148),
+     ('pérez', 0.8143640756607056),
+     ('rafael', 0.8114412426948547),
+     ('lara', 0.8102367520332336)]
 
 
 
@@ -298,16 +212,16 @@ wordvectors.most_similar_cosmul(positive=['habana','chile'],negative=['santiago'
 
 
 
-    [('cuba', 0.9638005495071411),
-     ('venezuela', 0.8891817331314087),
-     ('colombia', 0.8762299418449402),
-     ('cubana', 0.8471046686172485),
-     ('nicaragua', 0.8443880081176758),
-     ('cubanos', 0.8370179533958435),
-     ('ecuador', 0.8361555337905884),
-     ('brasil', 0.8355840444564819),
-     ('cubano', 0.8315702080726624),
-     ('panamá', 0.8302189111709595)]
+    [('cuba', 0.9782935380935669),
+     ('venezuela', 0.8504070043563843),
+     ('bolivia', 0.8276636600494385),
+     ('rica', 0.8253333568572998),
+     ('colombia', 0.819764256477356),
+     ('cubana', 0.8174163699150085),
+     ('argentina', 0.8128121495246887),
+     ('brasil', 0.8126526474952698),
+     ('panamá', 0.8123562932014465),
+     ('nicaragua', 0.8074418306350708)]
 
 
 
@@ -337,7 +251,7 @@ wordvectors.doesnt_match(['sol','luna','almuerzo','jupiter'])
 
 
 
-    'almuerzo'
+    'jupiter'
 
 
 
@@ -385,7 +299,7 @@ wordvectors.doesnt_match(['santiago', 'paris', 'talca', 'concepcion'])
 
 
 
-    'paris'
+    'concepcion'
 
 
 

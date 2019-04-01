@@ -27,9 +27,6 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
     - Every sequence of the 'DIGITO' keyword was replaced by (a single) '0'
     - All words of more than 3 characteres plus a '0' were ommitted (example: 'padre0')
 
-#### Reference
-Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.github.io/SBWCE/). 
-
 ## GloVe embeddings from SBWC
 
 #### Embeddings
@@ -48,8 +45,6 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 #### Corpus
 - [Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/) (see above)
 
-#### Reference
-Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the GloVe paper [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf) and the [Spanish Billion Word Corpus project](http://crscardellino.github.io/SBWCE/).
 
 ## FastText embeddings from Spanish Wikipedia 
 
@@ -64,10 +59,6 @@ Links to the embeddings (#dimensions=300, #vectors=985667):
      
 #### Corpus
 - [Wikipedia Spanish Dump](https://archive.org/details/eswiki-20150105)
-
-#### Reference
-Word embeddings were computed by [FastText team](https://github.com/facebookresearch/fastText).
-Please refer to [FastText Pre-trained Vectors page](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) if you want to use these vectors.
 
 ## Word2Vec embeddings from SBWC
 
@@ -84,6 +75,11 @@ Links to the embeddings (#dimensions=300, #vectors=1000653)
 - [Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/) 
 - Corpus Size: 1.4 billion words
 
-#### Reference
-Word embeddings were computed by [Cristian Cardellino](https://github.com/crscardellino). Please refer to the [SBWCE page](http://crscardellino.github.io/SBWCE/) if you want to use these vectors.
 
+## References
+
+- FastText embeddings from SBWC: Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the FastText paper [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606) and the [Spanish Billion Word Corpus project](http://crscardellino.github.io/SBWCE/). 
+- GloVe embeddings from SBWC: Word embeddings were computed by [Jorge Pérez](https://github.com/jorgeperezrojas). You can use these vectors as you wish under the CC-BY-4.0 license. You may also want to cite the GloVe paper [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf) and the [Spanish Billion Word Corpus project](http://crscardellino.github.io/SBWCE/).
+- FastText embeddings from Spanish Wikipedia: Word embeddings were computed by [FastText team](https://github.com/facebookresearch/fastText).
+Please refer to [FastText Pre-trained Vectors page](https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md) if you want to use these vectors.
+- Word2Vec embeddings from SBWC: Word embeddings were computed by [Cristian Cardellino](https://github.com/crscardellino). Please refer to the [SBWCE page](http://crscardellino.github.io/SBWCE/) if you want to use these vectors.

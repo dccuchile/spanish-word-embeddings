@@ -2,25 +2,14 @@
 
 Below you find links to Spanish word embeddings computed with different methods and from different corpora. Whenever it is possible, a description of the parameters used to compute the embeddings is included, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided, so please refer to the original sources for proper citation (also see [References](#references)). An example of the use of some of these embeddings can be found [here](examples/Ejemplo_WordVectors.md) or in this [tutorial](https://github.com/mquezada/starsconf2018-word-embeddings) (both in Spanish).
 
+
 ## FastText embeddings from SUC
 
 #### Embeddings
-Links to the embeddings:
-##### XS (#dimensions=10, #vectors=1313423): 
-- [Vector format (.vec)](https://zenodo.org/record/3234051/files/embeddings-xs-model.vec?download=1) (122 MB) 
-- [Binary format (.bin)](https://zenodo.org/record/3234051/files/embeddings-xs-model.bin?download=1) (209 MB)
-##### S (#dimensions=30, #vectors=1313423): 
-- [Vector format (.vec)](https://zenodo.org/record/3234051/files/embeddings-s-model.vec?download=1) (348 MB) 
-- [Binary format (.bin)](https://zenodo.org/record/3234051/files/embeddings-s-model.bin?download=1) (579 MB)
-##### M (#dimensions=100, #vectors=1313423): 
-- [Vector format (.vec)](https://zenodo.org/record/3234051/files/embeddings-m-model.vec?download=1) (1.1 GB) 
-- [Binary format (.bin)](https://zenodo.org/record/3234051/files/embeddings-m-model.bin?download=1) (1.9 GB)
-##### L (#dimensions=300, #vectors=1313423): 
-- [Vector format (.vec)](https://zenodo.org/record/3234051/files/embeddings-l-model.vec?download=1) (3.4 GB) 
-- [Binary format (.bin)](https://zenodo.org/record/3234051/files/embeddings-l-model.bin?download=1) (5.6 GB)
-##### new L (#dimensions=300, #vectors=1451827): 
+Links to the embeddings (#dimensions=300, #vectors=1451827):
 - [Vector format (.vec)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.vec?download=1) (3.8 GB) 
 - [Binary format (.bin)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.bin?download=1) (5.9 GB)
+More vectors with different sizes can be found [here](emb-from-suc.md)
 
 #### Algorithm
 - Implementation: [FastText](https://github.com/facebookresearch/fastText) with Skipgram

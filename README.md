@@ -6,7 +6,7 @@ Summary (and links) for the embeddings in this page:
 
 |   |Corpus     |Size |Algorithm  |#vectors  |vec-dim   |Credits    |
 |---|-----------|----:|-----------|---------:|---------:|-----------|
-|[1](#fasttext-embeddings-from-suc)|Spanish Unannotated Corpora|3B|FastText|1,451,827|300|[José Cañete](https://github.com/josecannete)|
+|[1](#fasttext-embeddings-from-suc)|Spanish Unannotated Corpora|2.6B|FastText|1,313,423|300|[José Cañete](https://github.com/josecannete)|
 |[2](#fasttext-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|FastText|855,380|300|[Jorge Pérez](https://github.com/jorgeperezrojas)|
 |[3](#glove-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|Glove|855,380|300|[Jorge Pérez](https://github.com/jorgeperezrojas)|
 |[4](#word2vec-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|Word2Vec|1,000,653|300|[Cristian Cardellino](https://github.com/crscardellino)|
@@ -16,10 +16,11 @@ Summary (and links) for the embeddings in this page:
 ## FastText embeddings from SUC
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=1,451,827):
-- [Vector format (.vec)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.vec?download=1) (3.8 GB) 
-- [Binary format (.bin)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.bin?download=1) (5.9 GB)
-More vectors with different sizes can be found [here](emb-from-suc.md)
+Links to the embeddings (#dimensions=300, #vectors=1,313,423):
+- [Vector format (.vec)](https://zenodo.org/record/3234051/files/embeddings-l-model.vec?download=1) (3.4 GB) 
+- [Binary format (.bin)](https://zenodo.org/record/3234051/files/embeddings-l-model.bin?download=1) (5.6 GB)
+
+More vectors with different dimensiones (10, 30, 100, and 300) can be found [here](emb-from-suc.md)
 
 #### Algorithm
 - Implementation: [FastText](https://github.com/facebookresearch/fastText) with Skipgram

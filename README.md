@@ -4,8 +4,8 @@ Below you find links to Spanish word embeddings computed with different methods 
 
 Summary (and links) for the embeddings in this page:
 
-|  |Algorithm  |Corpus     |Corpus Size | #dimensions   |#vectors  |Credits|
-|---|-----------|-----------|--------------|----------|
+|   |Algorithm  |Corpus     |Corpus Size | #dimensions   |#vectors  |Credits    |
+|---|-----------|-----------|------------|---------------|----------|-----------|
 |[1](#fasttext-embeddings-from-suc)|FastText|Spanish Unannotated Corpora|3B|300|1,451,827|[José Cañete](https://github.com/josecannete)|
 |[2](#fasttext-embeddings-from-sbwc)|FastText|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|
 |[3](#glove-embeddings-from-sbwc)|Glove|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|

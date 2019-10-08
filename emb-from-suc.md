@@ -19,3 +19,18 @@ Links to the embeddings:
 ##### new L (#dimensions=300, #vectors=1451827): 
 - [Vector format (.vec)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.vec?download=1) (3.8 GB) 
 - [Binary format (.bin)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.bin?download=1) (5.9 GB)
+
+#### Algorithm
+- Implementation: [FastText](https://github.com/facebookresearch/fastText) with Skipgram
+- Parameters: 
+    - min subword-ngram = 3 
+    - max subword-ngram = 6
+    - minCount = 5
+    - epochs = 20
+    - dim = 10, 30, 100, 300, 300
+    - all other parameters set as default
+     
+#### Corpus
+- [Spanish Unannotated Corpora](https://github.com/josecannete/spanish-corpora)
+- Corpus Size: 2.6 billion words and 3 billion words (for the new 300 dim)
+- Post processing: Explained in [Embeddings](https://github.com/BotCenter/spanishWordEmbeddings) and [Corpora](https://github.com/josecannete/spanish-corpora) repos, that include tokenization, lowercase, removed listings and urls.

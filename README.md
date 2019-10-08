@@ -4,13 +4,13 @@ Below you find links to Spanish word embeddings computed with different methods 
 
 Summary (and links) for the embeddings in this page:
 
-|  |Algorithm  |Corpus     |#dimensions   |#vectors  |
+|  |Algorithm  |Corpus     |Corpus Size | #dimensions   |#vectors  |Credits|
 |---|-----------|-----------|--------------|----------|
-|[1](#fasttext-embeddings-from-suc)|FastText|Spanish Unannotated Corpora|300|1,451,827|
-|[2](#fasttext-embeddings-from-sbwc)|FastText|Spanish Billion Word Corpus|300|855,380|
-|[3](#glove-embeddings-from-sbwc)|Glove|Spanish Billion Word Corpus|300|855,380|
-|[4](#fasttext-embeddings-from-spanish-wikipedia)|FastText|Spanish Wikipedia|300|985,667|
-|[5](#word2vec-embeddings-from-sbwc)|Word2Vec|Spanish Billion Word Corpus|300|1,000,653|
+|[1](#fasttext-embeddings-from-suc)|FastText|Spanish Unannotated Corpora|3B|300|1,451,827|[José Cañete](https://github.com/josecannete)|
+|[2](#fasttext-embeddings-from-sbwc)|FastText|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|
+|[3](#glove-embeddings-from-sbwc)|Glove|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|
+|[4](#fasttext-embeddings-from-spanish-wikipedia)|FastText|Spanish Wikipedia|???|300|985,667|[FastText team](https://github.com/facebookresearch/fastText)|
+|[5](#word2vec-embeddings-from-sbwc)|Word2Vec|Spanish Billion Word Corpus|1.4B|300|1,000,653|[Cristian Cardellino](https://github.com/crscardellino)|
 
 ## FastText embeddings from SUC
 
@@ -27,12 +27,12 @@ More vectors with different sizes can be found [here](emb-from-suc.md)
     - max subword-ngram = 6
     - minCount = 5
     - epochs = 20
-    - dim = 10, 30, 100, 300, 300
+    - dim = 300
     - all other parameters set as default
      
 #### Corpus
 - [Spanish Unannotated Corpora](https://github.com/josecannete/spanish-corpora)
-- Corpus Size: 2.6 billion words and 3 billion words (for the new 300 dim)
+- Corpus Size: 3 billion words
 - Post processing: Explained in [Embeddings](https://github.com/BotCenter/spanishWordEmbeddings) and [Corpora](https://github.com/josecannete/spanish-corpora) repos, that include tokenization, lowercase, removed listings and urls.
 
 ## FastText embeddings from SBWC

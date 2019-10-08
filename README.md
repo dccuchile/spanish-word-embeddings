@@ -2,11 +2,17 @@
 
 Below you find links to Spanish word embeddings computed with different methods and from different corpora. Whenever it is possible, a description of the parameters used to compute the embeddings is included, together with simple statistics of the vectors, vocabulary, and description of the corpus from which the embeddings were computed. Direct links to the embeddings are provided, so please refer to the original sources for proper citation (also see [References](#references)). An example of the use of some of these embeddings can be found [here](examples/Ejemplo_WordVectors.md) or in this [tutorial](https://github.com/mquezada/starsconf2018-word-embeddings) (both in Spanish).
 
+Summary (and links) for the embeddings in this page:
+
+|#  |Algorithm  |Corpus     |#dimensions   |#vectors  |
+|---|-----------|-----------|--------------|----------|
+|[1](#fasttext-embeddings-from-suc)|[FastText](https://github.com/facebookresearch/fastText)|[Spanish Unannotated Corpora](https://github.com/josecannete/spanish-corpora)|300|1,451,827|
+|[2](#fasttext-embeddings-from-sbwc)|[FastText](https://github.com/facebookresearch/fastText)|[Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/)|300|855,380|
 
 ## FastText embeddings from SUC
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=1451827):
+Links to the embeddings (#dimensions=300, #vectors=1,451,827):
 - [Vector format (.vec)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.vec?download=1) (3.8 GB) 
 - [Binary format (.bin)](https://zenodo.org/record/3255001/files/embeddings-new_large-general_3B_fasttext.bin?download=1) (5.9 GB)
 More vectors with different sizes can be found [here](emb-from-suc.md)
@@ -29,7 +35,7 @@ More vectors with different sizes can be found [here](emb-from-suc.md)
 ## FastText embeddings from SBWC
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=855380): 
+Links to the embeddings (#dimensions=300, #vectors=855,380): 
 - [Vector format (.vec.gz)](http://dcc.uchile.cl/~jperez/word-embeddings/fasttext-sbwc.vec.gz) (802 MB) 
 - [Binary format (.bin)](http://dcc.uchile.cl/~jperez/word-embeddings/fasttext-sbwc.bin) (4.2 GB)
 
@@ -54,7 +60,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 ## GloVe embeddings from SBWC
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=855380): 
+Links to the embeddings (#dimensions=300, #vectors=855,380): 
 - [Vector format (.vec.gz)](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.vec.gz) (906 MB) 
 - [Binary format (.bin)](http://dcc.uchile.cl/~jperez/word-embeddings/glove-sbwc.i25.bin) (3.9 GB)
 
@@ -73,7 +79,7 @@ Links to the embeddings (#dimensions=300, #vectors=855380):
 ## FastText embeddings from Spanish Wikipedia 
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=985667): 
+Links to the embeddings (#dimensions=300, #vectors=985,667): 
 - [Vector format (.vec)](https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.es.vec) (2.4 GB) 
 - [Binary plus vector format (.zip)](https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.es.zip) (5.4 GB)
 
@@ -87,7 +93,7 @@ Links to the embeddings (#dimensions=300, #vectors=985667):
 ## Word2Vec embeddings from SBWC
 
 #### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=1000653) 
+Links to the embeddings (#dimensions=300, #vectors=1,000,653) 
 - [Vector format (.txt.bz2)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.txt.bz2) 
 - [Binary format (.bin.gz)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.bin.gz) 
 

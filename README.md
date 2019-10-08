@@ -4,13 +4,14 @@ Below you find links to Spanish word embeddings computed with different methods 
 
 Summary (and links) for the embeddings in this page:
 
-|   |Algorithm  |Corpus     |Corpus Size | #dimensions   |#vectors  |Credits    |
-|---|-----------|-----------|------------|---------------|----------|-----------|
-|[1](#fasttext-embeddings-from-suc)|FastText|Spanish Unannotated Corpora|3B|300|1,451,827|[José Cañete](https://github.com/josecannete)|
-|[2](#fasttext-embeddings-from-sbwc)|FastText|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|
-|[3](#glove-embeddings-from-sbwc)|Glove|Spanish Billion Word Corpus|1.4B|300|855,380|[Jorge Pérez](https://github.com/jorgeperezrojas)|
-|[4](#fasttext-embeddings-from-spanish-wikipedia)|FastText|Spanish Wikipedia|???|300|985,667|[FastText team](https://github.com/facebookresearch/fastText)|
-|[5](#word2vec-embeddings-from-sbwc)|Word2Vec|Spanish Billion Word Corpus|1.4B|300|1,000,653|[Cristian Cardellino](https://github.com/crscardellino)|
+|   |Corpus     |Size |Algorithm  |#vectors  |vec-dim   |Credits    |
+|---|-----------|----:|-----------|---------:|---------:|-----------|
+|[1](#fasttext-embeddings-from-suc)|Spanish Unannotated Corpora|3B|FastText|1,451,827|300|[José Cañete](https://github.com/josecannete)|
+|[2](#fasttext-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|FastText|855,380|300|[Jorge Pérez](https://github.com/jorgeperezrojas)|
+|[3](#glove-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|Glove|855,380|300|[Jorge Pérez](https://github.com/jorgeperezrojas)|
+|[4](#word2vec-embeddings-from-sbwc)|Spanish Billion Word Corpus|1.4B|Word2Vec|1,000,653|300|[Cristian Cardellino](https://github.com/crscardellino)|
+|[5](#fasttext-embeddings-from-spanish-wikipedia)|Spanish Wikipedia|???|FastText|985,667|300|[FastText team](https://github.com/facebookresearch/fastText)|
+
 
 ## FastText embeddings from SUC
 
@@ -78,6 +79,21 @@ Links to the embeddings (#dimensions=300, #vectors=855,380):
 #### Corpus
 - [Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/) (see above)
 
+## Word2Vec embeddings from SBWC
+
+#### Embeddings
+Links to the embeddings (#dimensions=300, #vectors=1,000,653) 
+- [Vector format (.txt.bz2)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.txt.bz2) 
+- [Binary format (.bin.gz)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.bin.gz) 
+
+#### Algorithm
+- Implementation: [Word2Vec with Skipgram by GenSim](https://radimrehurek.com/gensim/models/word2vec.html) 
+- Parameters: For details on parameters please refer to the [SBWCE page](http://crscardellino.github.io/SBWCE/)
+     
+#### Corpus
+- [Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/) 
+- Corpus Size: 1.4 billion words
+
 
 ## FastText embeddings from Spanish Wikipedia 
 
@@ -93,20 +109,6 @@ Links to the embeddings (#dimensions=300, #vectors=985,667):
 #### Corpus
 - [Wikipedia Spanish Dump](https://archive.org/details/eswiki-20150105)
 
-## Word2Vec embeddings from SBWC
-
-#### Embeddings
-Links to the embeddings (#dimensions=300, #vectors=1,000,653) 
-- [Vector format (.txt.bz2)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.txt.bz2) 
-- [Binary format (.bin.gz)](http://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5.bin.gz) 
-
-#### Algorithm
-- Implementation: [Word2Vec with Skipgram by GenSim](https://radimrehurek.com/gensim/models/word2vec.html) 
-- Parameters: For details on parameters please refer to the [SBWCE page](http://crscardellino.github.io/SBWCE/)
-     
-#### Corpus
-- [Spanish Billion Word Corpus](http://crscardellino.github.io/SBWCE/) 
-- Corpus Size: 1.4 billion words
 
 
 ## References
